@@ -6,22 +6,31 @@
     <title>Shana Danza</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css.css">
 </head>
-<body class="bg-dark text-white">
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
-        <section class="container-fluid">
-            <img src="fotos/logo.jpg" alt="LOGO" width="50">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+
+<body class="text-white">
+    <nav class="navbar navbar-expand-sm navbar-dark">
+        <section class="container-fluid d-flex align-items-center">
+
+            <a class="navbar-brand" href="#">
+                <img src="fotos/logo.jpg" alt="LOGO" width="50">
+            </a>
+
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapsibleNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <section class="collapse navbar-collapse" id="collapsibleNavbar">
+
+            <section class="collapse navbar-collapse justify-content-center" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Inicio</a>
+                        <a class="nav-link dropdown-toggle" href="inicio.html" data-bs-toggle="dropdown">Inicio</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#somos">¿Quiénes somos?</a></li>
-                            <li><a class="dropdown-item" href="#horario">Horario</a></li>
-                            <li><a class="dropdown-item" href="#preguntas">Preguntas frecuentes</a></li>
+                            <li><a class="dropdown-item" href="inicio.html#somos">¿Quiénes somos?</a></li>
+                            <li><a class="dropdown-item" href="inicio.html#horario">Horario</a></li>
+                            <li><a class="dropdown-item" href="inicio.html#preguntas">Preguntas frecuentes</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -45,7 +54,7 @@
         </section>
     </nav>
     
-    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <section id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -56,41 +65,41 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
         </ol>
-        <div class="carousel-inner" style="height: 650px;">
-            <div class="carousel-item active">
+        <section class="carousel-inner tamano">
+            <section class="carousel-item active">
                 <img class="d-block mx-auto w-50 h-100" src="fotos/bienvenida.jpeg">
-            </div>
-            <div class="carousel-item">
+            </section>
+            <section class="carousel-item">
                 <img class="d-block mx-auto w-50 h-100" src="fotos/concurso4.jpg">
-            </div>
-            <div class="carousel-item">
+            </section>
+            <section class="carousel-item">
                 <img class="d-block mx-auto w-50 h-100" src="fotos/concurso6.jpg">
-            </div>
-            <div class="carousel-item">
+            </section>
+            <section class="carousel-item">
                 <img class="d-block mx-auto w-50 h-100" src="fotos/concurso7.jpg">
-            </div>
-            <div class="carousel-item">
+            </section>
+            <section class="carousel-item">
                 <img class="d-block mx-auto w-50 h-100" src="fotos/concurso9.jpg">
-            </div>
-            <div class="carousel-item">
+            </section>
+            <section class="carousel-item">
                 <img class="d-block mx-auto w-50 h-100" src="fotos/concurso8.jpg">
-            </div>
-            <div class="carousel-item">
+            </section>
+            <section class="carousel-item">
                 <img class="d-block mx-auto w-50 h-100" src="fotos/concurso10.jpg">
-            </div>
-            <div class="carousel-item">
+            </section>
+            <section class="carousel-item">
                 <img class="d-block mx-auto w-50 h-100" src="fotos/concurso13.jpg">
-            </div>
-            <div class="carousel-item">
+            </section>
+            <section class="carousel-item">
                 <img class="d-block mx-auto w-50 h-100" src="fotos/concurso3.jpg">
-            </div>
-            <div class="carousel-item">
+            </section>
+            <section class="carousel-item">
                 <img class="d-block mx-auto w-50 h-100" src="fotos/concurso15.jpeg">
-            </div>
-            <div class="carousel-item">
+            </section>
+            <section class="carousel-item">
                 <img class="d-block mx-auto w-50 h-100" src="fotos/concurso11.jpg">
-            </div>
-        </div>
+            </section>
+        </section>
 
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -98,7 +107,7 @@
         <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </a>
-    </div>
+    </section>
 
     <section class="contacto text-center py-5">
         <h2 class="mb-4">¿Quieres concursar con nosotros? ¡Contáctanos!</h2>
@@ -109,7 +118,7 @@
     </section>
 
 
-    <footer class="text-center py-4 bg-light text-dark">
+    <footer class="text-center py-4 text-light">
         <p class="mb-3">Creado por Marta Gómez &copy; 2025</p>
     
         <section class="mb-3">
@@ -122,22 +131,19 @@
     
         <section class="d-flex justify-content-center gap-3">
             <a href="https://www.facebook.com/shanadanza/?locale=es_LA" target="_blank">
-                <img src="fotos/facebook.webp" alt="Facebook" style="width: 40px;">
+                <img src="fotos/facebook.webp" alt="Facebook" class="footer_tamano">
             </a>
             <a href="https://www.instagram.com/shanadanza/?hl=es" target="_blank">
-                <img src="fotos/insta.jpg" alt="Instagram" style="width: 40px;">
+                <img src="fotos/insta.jpg" alt="Instagram" class="footer_tamano">
             </a>
             <a href="https://www.tiktok.com/@shanadanza?lang=es" target="_blank">
-                <img src="fotos/tiktok.jpg" alt="TikTok" style="width: 40px;">
+                <img src="fotos/tiktok.jpg" alt="TikTok" class="footer_tamano">
             </a>
         </section>
     </footer>
 </body>
-<!-- Bootstrap 4 JS + jQuery -->
+
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"></script>
-
-<!-- Bootstrap 4 CSS (en el <head>) -->
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
 
 </html>
